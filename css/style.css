@@ -64,7 +64,6 @@ nav {
   background-color: #39D3E8;
   text-align: center;
   padding-top: 5px;
-  padding-bottom: 5px;
   letter-spacing: 2px;
   text-shadow: 0 1px 0 black;
   position: fixed;
@@ -134,8 +133,10 @@ h3 {
   line-height: 1.1;
   margin-bottom: 1%; /*26px */
   margin-top: 1px;
-  text-align: center;
+  
   }
+
+
 
   h4 {
      font-size: 1.5em;
@@ -169,9 +170,9 @@ margin: 5px 5px;
 
 .social {
   text-align: center;
-  height: 35px;
+  height: 30px;
   background-color: #39D3E8;
-  margin-bottom: 2px;
+ 
 }
 
 
@@ -221,21 +222,15 @@ p {
   clear: both;
   padding: 0px;
   margin: 0px;
-  text-align: center;
-}
 
-/*  SECTIONS  */
-.section {
-  clear: both;
-  padding: 0px;
-  margin: 0px;
+  
 }
 
 /*  COLUMN SETUP  */
 .col {
   display: block;
   float:left;
-  margin: 1% 0 1% 1.6%;
+  margin: 3% 0 1% 1.6%;
   background: #2B2B2B;
 }
 .col:first-child { margin-left: 0; }
@@ -251,7 +246,7 @@ p {
   width: 100%;
 }
 .span_1_of_2 {
-  width: 49.2%;
+  width: 48.2%;
 }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
@@ -266,23 +261,30 @@ p {
   .span_2_of_2, .span_1_of_2 { width: 100%; }
 }
 
-
-
-
-
-
 .actor {
-  margin: 5px;
+  margin: 35px 5px 0 0;
   float: left;
+  display: block;
+
 }
 
 .info {
   color: #F6F6F6;
-  padding: 2px;
+  padding: 10px;
   margin: 1px;
   width: 95%;
   margin-bottom: 0px;
+  clear: right;
+  
 }
+
+span {
+  display: block;
+  overflow: hidden;
+
+}
+
+
 
 /*
 *************
@@ -399,12 +401,9 @@ a:link {
 }
 
 a:visited {
-    color: #F6F6F6;
+    color: white;
 }
 
-.email, a:visited {
-    color: #F6F6F6;
-}
 
 a:hover {
     color: #FFE94B;
@@ -486,32 +485,19 @@ a {
       
     }
 
-    .logo {
-      display: none;
-    }
 
 
-    nav {
-      position: relative; 
-    }
+
 
     .title{
       border: none;
     }
 
 
-    .cc{
-      width: 100%;
-    }
-    
-    .slider {
-      display: none;
-    }
-
-    .grade {
-      width: 100%;
-    }
+   
   
+
+ 
 
 
 
@@ -519,24 +505,22 @@ a {
   
 
   
-  .primary-content,
-  .secondary-content{
-    width: 100%;
-    padding: 20px;
-    border-top: none;
-  }
+
       .main-header {
-      background: #F6F6F6 url(../img/poster_large.jpg) no-repeat center; 
-      margin: 0px;
+      background: #2B2B2B url(../img/poster_large.jpg) no-repeat center; 
+      margin-bottom: 15px;
+      
      
       }
 
-        .title{
-      border: none;
-    }
+  h3 {
+    text-align: center;
+  }
 
-    .actor {
-      float:none;
+    nav {
+      position: relative;
+      padding-bottom: 1px; 
+      background-color: #2B2B2B;
     }
       
       nav a{
@@ -544,9 +528,9 @@ a {
   text-shadow: 0 1px 0 black;
   display: block;
   margin: 15px;
-  padding: 9px;
+  padding: 10px 0 10px 0;
   border: 1px solid gray;
-  background: url(../images/mobile_link_arrow.png) no-repeat right center;
+  background: #39D3E8 url(../images/mobile_link_arrow.png) no-repeat right center;
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
   border-radius: 12px;
@@ -559,9 +543,10 @@ nav a:hover {
 }
 
 
-    .title{
-      font-size: 1.3rem;
-      border: none;
+ 
+  .actor {
+      float:none;
+      margin: 0 auto;
     }
 
     h1 {
@@ -569,11 +554,21 @@ nav a:hover {
       line-height: 1.1;
     }
 
-  
-  
-    .cc{
-      width: 100%;
+    span {
+      text-align: center;
     }
+
+    .grade p{
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .social {
+      margin-top: 15px;
+     
+    }
+
+  
 
     .main-footer{
       padding: 20px 0;
@@ -585,7 +580,7 @@ nav a:hover {
 
 }
 
-@media (min-width: 451px) and (max-width: 700px){
+@media (min-width: 451px) and (max-width: 850px){
   
   .main-header {
   background: #F6F6F6 url(../img/home.jpg) no-repeat center; 
@@ -597,4 +592,14 @@ nav a:hover {
   margin: 0px;
   
 }
+
+  .actor {
+      float:none;
+      margin: 0 auto;
+    }
+
+  h3 {
+    text-align: center;
+  }
 }
+
